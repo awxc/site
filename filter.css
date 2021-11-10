@@ -1,0 +1,117 @@
+.container {
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+	justify-content: center;
+	margin-bottom: 40%;
+
+
+}
+input[type="radio"] {
+	display: none;
+}
+.filter2  {
+	width: 23%;
+	float: left;
+	text-align: center;
+	background: rgba(39,37,39,0.8);
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	color: #cdcbcc;
+	padding: 0.5%;
+	margin: 0.5%;
+	margin-bottom: 30px;
+	cursor: pointer;
+	margin-top: 130px;
+
+}
+input[type="radio"][id="kylie_skin"]:checked + .filter2 {
+	background: rgba(77,73,77,0.7);
+}
+input[type="radio"][id="kylie_skin"]:checked ~ .vivienne_sabo, input[type="radio"][id="kylie_skin"]:checked ~ .riv_gosh {
+	width: 0;
+	height: 0;
+	padding: 0;
+	margin: 0;
+	opacity: 0;
+}
+input[type="radio"][id="vivienne_sabo"]:checked + .filter2 {
+	background: rgba(77,73,77,0.7);
+}
+input[type="radio"][id="vivienne_sabo"]:checked ~ .kylie_skin, input[type="radio"][id="vivienne_sabo"]:checked ~ .riv_gosh {
+	width: 0;
+	height: 0;
+	padding: 0;
+	margin: 0;
+	opacity: 0;
+}
+input[type="radio"][id="riv_gosh"]:checked + .filter2 {
+	background: rgba(77,73,77,0.7);
+}
+input[type="radio"][id="riv_gosh"]:checked ~ .kylie_skin, input[type="radio"][id="riv_gosh"]:checked ~ .vivienne_sabo {
+	width: 0;
+	height: 0;
+	padding: 0;
+	margin: 0;
+	opacity: 0;
+}
+
+.tile {
+	width: 23%;
+	height: 500px;
+	float: left;
+	transition: all 1s;
+	margin: 0.5%;
+	padding: 0.5%;
+
+}
+
+.img-in-filter {
+	width: 95%;
+	height: 360px;
+	margin-top: 1%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.img-in-filter2 {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.img-in-filter img{
+	width: 100%;
+	height: 100%;
+
+}
+
+.model-of-cosmetic {
+	text-align: center;
+	margin-bottom: 2%;
+}
+
+.price-of-cosmetic {
+	text-align: center;
+	margin-bottom: 2%;
+}
+
+.submit-in-filter {
+
+	width: 200px;
+	height: 30px;
+	margin-left: 23.75%;
+	background-color: rgba(235,34,60,0.6);
+	color: #cdcbcc;
+
+}
+/*Рив гош*/
+.riv_gosh {
+	background: rgba(39,37,39,0.5);
+}
+/*кайли скин */
+.kylie_skin {
+	background: rgba(39,37,39,0.5);
+}
+/*вивьен сабо*/
+.vivienne_sabo {
+	background: rgba(39,37,39,0.5);
+}

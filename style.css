@@ -1,0 +1,289 @@
+body {
+font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+font-size: 16px;
+background-color:#FFCCCC
+}
+
+/* расположение и отступы текста в шапке*/
+.shapka{
+text-align: right;
+margin-right:10px;
+}
+
+/* цвет заголовков */
+h1,h2,h3{
+	color:maroon;
+}
+
+/* фон для номера телефона*/
+.calls {
+	background-color: pink;
+}
+
+/* отступы для логотипа*/
+.logo{
+	padding-left:10px;
+}
+
+/* параметры для фона шапки*/
+.hero-image{
+height:300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("img/фон.jpeg");
+}
+
+/* параметры для слогана*/
+.heading{background-color: lightpink;
+text-align: center;
+padding-top:10px;
+margin-bottom:70px;
+}
+
+/* надпись "давайте познакомимся" и "товары магазина"*/
+.dp{text-align: center;
+margin: 0;
+padding: 0
+}
+
+/* надпись "желаете подписаться"*/
+.dp1{text-align: center;
+	padding-top: 20px;
+}
+
+/* отступы для блока о подборе косметики*/
+.pod{
+	padding-top: 50px;
+}
+
+/* отступы для блока о коже  */
+.koga{
+	padding-bottom: 30px;
+}
+
+/* Пустой блок */
+.empty {
+	width: 1650px;
+	height: 20px;
+	margin-right: auto;
+	margin-left: auto;
+	display: flex;
+}
+
+/* блокам со списками и информацией даем другой цвет */
+a, p {color: maroon;}
+.consultant, .podbor-cosmetici, .koga, .dr{
+	color: maroon;
+}
+
+/* блок для картинки в блоке день рождение*/
+.ddr{
+	text-align: center;
+}
+
+/* отступы для блока о консультанте*/
+.cs, .pod{
+	padding: 30px;
+}
+
+/* отступы для блока о товарах*/
+.in_magazin{
+    padding: 40px;
+}
+
+/* выравнивание текста в блоке с товарами магазина*/
+.in_magazin h3{
+    text-align: center;
+}
+
+/*  отступы у тем блоков с информацией*/
+.pod1, .cs{
+	padding-left: 40px;
+}
+
+/* цвет и стиль текта в меню*/
+.neo a {
+	color: darkred;
+	text-decoration: none;
+}
+
+/* при наведении подчеркивается*/
+.neo a:hover {
+	text-decoration: underline;
+}
+
+/* стиль для строки с фото*/
+.foto, .foto1,.coga, .ddr, .foto2{
+border:5px solid pink;
+padding:10px;
+text-align: center;
+margin-bottom: 40px;
+}
+
+
+/* отступы для полей ввода*/
+.feedback-form-group {
+	padding: 10px 0;
+	padding-left: 10px;
+}
+
+/* Стиль слов при полях*/
+.feedback-form-group label {
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+/* поле при наведении*/
+.feedback-form input[type="text"]:hover,
+.feedback-form select:hover,
+.feedback-form textarea:hover {
+	border-color: #bebebe;
+}
+
+/* отступ кнопки "Подписаться"  и позвонить*/
+.btn1{margin: 30px;
+	border-color: palevioletred;
+	background: #FFCCCC;}
+.btn{
+	margin-top: 10px;
+	border-color: palevioletred;
+	background: #FFCCCC;
+}
+
+/* кнопка наверх и ее стиль */
+.topbutton {
+	border:2px solid palevioletred;
+	background: #FFCCCC;
+	text-align:center;
+	padding:10px;
+	position:fixed;
+	bottom:50px;
+	right:50px;
+	color:#333;
+	font-size:12px;
+	border-radius: 5px;
+}
+/* фон для формы подписки */
+.footer{
+	background-color: lightpink;
+}
+
+/*оформление фона и стилей для слайдера */
+.wrapper {
+	height: 400px;
+	margin: 100px auto 0;
+	position: relative;
+	width: 400px;
+}
+/*если слайды пропадут цвет поля будет серым  */
+.wrapper > input {
+	display: none;
+}
+/* параметры для слайдеров*/
+.slider {
+	background-color: indianred;
+	height: inherit;
+	overflow: hidden;
+	position: relative;
+	width: inherit;
+	-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+	-moz-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+	-o-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+	box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+}
+/*общие стили для слайдеров */
+.slides {
+	height: inherit;
+	position: absolute;
+	width: inherit;
+}
+/*изображение к слайдам*/
+.slide1 { background-image: url('img/1-slide.jpg');}
+.slide2 { background-image: url('img/2-slide.jpg');}
+.slide3 { background-image: url('img/3-slide.jpg');}
+
+/*навигация по слайдам */
+.wrapper .controls {
+	left: 50%;
+	margin-left: -98px;
+	position: absolute;
+}
+/*задействуем переход по слайдам */
+.wrapper label {
+	cursor: pointer;
+	display: inline-block;
+	height: 8px;
+	margin: 25px 12px 0 16px;
+	position: relative;
+	width: 8px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+}
+/* кнопки для переключения*/
+.wrapper label:after {
+	border: 2px solid crimson;
+	content: " ";
+	display: block;
+	height: 12px;
+	left: -4px;
+	position: absolute;
+	top: -4px;
+	width: 12px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+}
+.wrapper label {
+	cursor: pointer;
+	display: inline-block;
+	height: 8px;
+	margin: 25px 12px 0 16px;
+	position: relative;
+	width: 8px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	-webkit-transition: background ease-in-out .5s;
+	-moz-transition: background ease-in-out .5s;
+	-o-transition: background ease-in-out .5s;
+	transition: background ease-in-out .5s;
+}
+
+.wrapper label:hover,
+#slide1:checked ~ .controls label:nth-of-type(1),
+#slide2:checked ~ .controls label:nth-of-type(2),
+#slide3:checked ~ .controls label:nth-of-type(3) {
+	background: lightcoral;
+}
+/*активируем переключение слайдеров */
+.slides {
+	height: inherit;
+	opacity: 0;
+	position: absolute;
+	width: inherit;
+	z-index: 0;
+	-webkit-transform: scale(1.5);
+	-moz-transform: scale(1.5);
+	-o-transform: scale(1.5);
+	transform: scale(1.5);
+	-webkit-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+	-moz-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+	-o-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+	transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+}
+/* порядок следования слайдов */
+#slide1:checked ~ .slider > .slide1,
+#slide2:checked ~ .slider > .slide2,
+#slide3:checked ~ .slider > .slide3 {
+	opacity: 1;
+	z-index: 1;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);}
+
